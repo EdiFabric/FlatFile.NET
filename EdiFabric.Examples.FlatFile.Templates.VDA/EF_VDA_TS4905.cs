@@ -21,14 +21,14 @@ namespace EdiFabric.Templates.Vda
 
         [Required]
         [Pos(3)]
-        public S519 S519 { get; set; }        
+        public S519 S519 { get; set; }
     }
-    
+
     [Serializable()]
     [Group(typeof(S512))]
     public class TS4905_S512Loop
     {
-        
+
         [Required]
         [Pos(1)]
         public S512 S512 { get; set; }
@@ -45,15 +45,15 @@ namespace EdiFabric.Templates.Vda
 
         [Pos(5)]
         public List<S517> S517 { get; set; }
-        
+
         [ListCount(5)]
         [Pos(6)]
         public List<S518> S518 { get; set; }
-        
+
     }
 
     [Serializable()]
-    [Segment("511", typeof(VDA_ID_V2))]
+    [Segment("511", false, ' ', typeof(VDA_ID_V2))]
     public class S511
     {
         [Required]
@@ -111,7 +111,7 @@ namespace EdiFabric.Templates.Vda
     }
 
     [Serializable()]
-    [Segment("512", typeof(VDA_ID_V1))]
+    [Segment("512", false, ' ', typeof(VDA_ID_V1))]
     public class S512
     {
         [Required]
@@ -230,7 +230,7 @@ namespace EdiFabric.Templates.Vda
     }
 
     [Serializable()]
-    [Segment("513", typeof(VDA_ID_V1))]
+    [Segment("513", false, ' ', typeof(VDA_ID_V1))]
     public class S513
     {
         [Required]
@@ -281,13 +281,13 @@ namespace EdiFabric.Templates.Vda
         [Pos(8)]
         public string CallOffDate1_08 { get; set; }
 
-        [StringLength(9, 9)]
+        [StringLength(9, 9, false, '0')]
         [DataElement("513_09", typeof(VDA_N0))]
         [Pos(9)]
         public string CallOffQuantity1_09 { get; set; }
 
         [Required]
-        [StringLength(6, 6)]
+        [StringLength(6, 6, false, '0')]
         [DataElement("513_10", typeof(VDA_DT))]
         [Pos(10)]
         public string CallOffDate2_10 { get; set; }
@@ -338,7 +338,7 @@ namespace EdiFabric.Templates.Vda
     }
 
     [Serializable()]
-    [Segment("514", typeof(VDA_ID_V1))]
+    [Segment("514", false, ' ', typeof(VDA_ID_V1))]
     public class S514
     {
         [Required]
@@ -443,7 +443,7 @@ namespace EdiFabric.Templates.Vda
     }
 
     [Serializable()]
-    [Segment("515", typeof(VDA_ID_V1))]
+    [Segment("515", false, '0', typeof(VDA_ID_V1))]
     public class S515
     {
         [Required]
@@ -463,7 +463,7 @@ namespace EdiFabric.Templates.Vda
         [Pos(3)]
         public string ManufacturingReleaseStartDate_03 { get; set; }
 
-        [StringLength(6, 6)]
+        [StringLength(6, 6, false, ' ')]
         [DataElement("515_04", typeof(VDA_DT))]
         [Pos(4)]
         public string ManufacturingReleaseFinalDate_04 { get; set; }
@@ -478,7 +478,7 @@ namespace EdiFabric.Templates.Vda
         [Pos(6)]
         public string MaterialReleaseStartDate_06 { get; set; }
 
-        [StringLength(6, 6)]
+        [StringLength(6, 6, false, ' ')]
         [DataElement("515_07", typeof(VDA_DT))]
         [Pos(7)]
         public string MaterialReleaseFinalDate_07 { get; set; }
@@ -488,12 +488,12 @@ namespace EdiFabric.Templates.Vda
         [Pos(8)]
         public string MaterialReleaseCumulatedRequirements_08 { get; set; }
 
-        [StringLength(22, 22)]
+        [StringLength(22, 22, false, ' ')]
         [DataElement("515_09", typeof(VDA_AN))]
         [Pos(9)]
         public string CompletingArticleCode_09 { get; set; }
 
-        [StringLength(9, 9)]
+        [StringLength(9, 9, false, ' ')]
         [DataElement("515_10", typeof(VDA_AN))]
         [Pos(10)]
         public string ImmediateSupplier_10 { get; set; }
@@ -503,24 +503,24 @@ namespace EdiFabric.Templates.Vda
         [Pos(11)]
         public string DatePlanningHorizon_11 { get; set; }
 
-        [StringLength(14, 14)]
+        [StringLength(14, 14, false, ' ')]
         [DataElement("515_12", typeof(VDA_AN))]
         [Pos(12)]
         public string PointOfConsumption_12 { get; set; }
 
-        [StringLength(10, 10)]
+        [StringLength(10, 10, false, ' ')]
         [DataElement("515_13", typeof(VDA_N0))]
         [Pos(13)]
         public string CumulativeFigure_13 { get; set; }
 
-        [StringLength(18, 18)]
+        [StringLength(18, 18, false, ' ')]
         [DataElement("515_14", typeof(VDA_AN))]
         [Pos(14)]
         public string Blanks_14 { get; set; }
     }
 
     [Serializable()]
-    [Segment("517", typeof(VDA_ID_V1))]
+    [Segment("517", false, ' ', typeof(VDA_ID_V1))]
     public class S517
     {
         [Required]
@@ -559,7 +559,7 @@ namespace EdiFabric.Templates.Vda
     }
 
     [Serializable()]
-    [Segment("518", typeof(VDA_ID_V1))]
+    [Segment("518", false, ' ', typeof(VDA_ID_V1))]
     public class S518
     {
         [Required]
@@ -597,7 +597,7 @@ namespace EdiFabric.Templates.Vda
     }
 
     [Serializable()]
-    [Segment("519", typeof(VDA_ID_V1))]
+    [Segment("519", true, '0', typeof(VDA_ID_V1))]
     public class S519
     {
         [Required]
@@ -661,7 +661,7 @@ namespace EdiFabric.Templates.Vda
         public string CounterRecordType515_10 { get; set; }
 
         [Required]
-        [StringLength(67, 67)]
+        [StringLength(67, 67, false, ' ')]
         [DataElement("519_11", typeof(VDA_AN))]
         [Pos(11)]
         public string Blanks_11 { get; set; }
