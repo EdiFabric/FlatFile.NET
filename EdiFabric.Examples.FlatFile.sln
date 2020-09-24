@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.271
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiFabric.Examples.FlatFile.Templates.VDA", "EdiFabric.Examples.FlatFile.Templates.VDA\EdiFabric.Examples.FlatFile.Templates.VDA.csproj", "{E103EB3F-D8ED-459B-90A6-8287FB3DD8A4}"
 EndProject
@@ -17,6 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiFabric.Examples.FlatFile
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{AF952D8A-308D-4D91-9871-C4D171AE8EB3}"
 	ProjectSection(SolutionItems) = preProject
+		Files\CSV\Flat_Markers.txt = Files\CSV\Flat_Markers.txt
 		Files\CSV\Flat_PO.txt = Files\CSV\Flat_PO.txt
 	EndProjectSection
 EndProject

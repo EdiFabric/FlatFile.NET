@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            ReadCSVFile.Run();
+            //ReadCSVFile.Run();
+            ReadCSVFile.Run2();
             ReadCSVFileAsync.Run();
 
             WriteCSVFile.Run();
