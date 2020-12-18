@@ -18,7 +18,7 @@ namespace EdiFabric.Examples.FlatFile.Read
             Debug.WriteLine(MethodBase.GetCurrentMethod().Name);
             Debug.WriteLine("******************************");
 
-            Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + @"\..\..\..\Files\CSV\Flat_PO.txt");
+            Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + @"\..\..\..\Files\Flat_PO.txt");
 
             using (StreamReader streamReader = new StreamReader(ediStream, Encoding.UTF8, true, 1024))
             {
@@ -38,7 +38,7 @@ namespace EdiFabric.Examples.FlatFile.Read
             Debug.WriteLine(MethodBase.GetCurrentMethod().Name);
             Debug.WriteLine("******************************");
 
-            Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + @"\..\..\..\Files\CSV\Flat_Markers.txt");
+            Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + @"\..\..\..\Files\Flat_Markers.txt");
 
             using (StreamReader streamReader = new StreamReader(ediStream, Encoding.UTF8, true, 1024))
             {
