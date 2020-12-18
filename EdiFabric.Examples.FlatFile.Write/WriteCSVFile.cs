@@ -1,19 +1,18 @@
 ﻿using EdiFabric.Examples.FlatFile.Common;
-using EdiFabric.Examples.FlatFile.Templates.VDA;
 using EdiFabric.Framework.Writers;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Text;
 
-namespace EdiFabric.Examples.FlatFile.Console.VDA
+namespace EdiFabric.Examples.FlatFile.Write
 {
-    class WriteVDAFileAsync
+    class WriteCSVFile
     {
         /// <summary>
-        /// Generate and write CSV document to a stream async
+        /// Generate and write CSV document to a stream
         /// </summary>
-        public static async void Run()
+        public static void Run()
         {
             Debug.WriteLine("******************************");
             Debug.WriteLine(MethodBase.GetCurrentMethod().Name);
@@ -23,14 +22,14 @@ namespace EdiFabric.Examples.FlatFile.Console.VDA
             {
                 using (var writer = new StreamWriter(stream, Encoding.UTF8, 4096, true))
                 {
-                    using (var vdaWriter = new FlatWriter(writer))
+                    using (var flatWriter = new FlatWriter(writer, null, TrialLicense.SerialNumber))
                     {
-                        var ts4905 = TS4905Builder.BuildDeliveryInstruction();
-                        await vdaWriter.WriteAsync(ts4905);
+                        var flatPO = POBuilder.BuildFlatPO();
+                        flatWriter.Write(flatPO);
                     }
 
                     Debug.Write(stream.LoadToString());
-                }
+                }                
             }
         }
     }

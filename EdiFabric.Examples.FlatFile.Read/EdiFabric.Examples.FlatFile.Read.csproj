@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CA4B049D-FC6C-4027-8AE5-74C68D399E63}</ProjectGuid>
+    <ProjectGuid>{9D196BA5-263A-4D42-9891-327A19B29A40}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EdiFabric.Examples.FlatFile.Console.VDA</RootNamespace>
-    <AssemblyName>EdiFabric.Examples.FlatFile.Console.VDA</AssemblyName>
+    <RootNamespace>EdiFabric.Examples.FlatFile.Read</RootNamespace>
+    <AssemblyName>EdiFabric.Examples.FlatFile.Read</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -50,10 +50,8 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReadVDAFileAsync.cs" />
-    <Compile Include="ReadVDAFile.cs" />
-    <Compile Include="WriteVDAFileAsync.cs" />
-    <Compile Include="WriteVDAFile.cs" />
+    <Compile Include="ReadCSVFileAsync.cs" />
+    <Compile Include="ReadCSVFile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -64,9 +62,9 @@
       <Project>{9ee73a43-c18b-44ec-962f-064caa2c3c66}</Project>
       <Name>EdiFabric.Examples.FlatFile.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EdiFabric.Examples.FlatFile.Templates.VDA\EdiFabric.Examples.FlatFile.Templates.VDA.csproj">
-      <Project>{e103eb3f-d8ed-459b-90a6-8287fb3dd8a4}</Project>
-      <Name>EdiFabric.Examples.FlatFile.Templates.VDA</Name>
+    <ProjectReference Include="..\EdiFabric.Examples.FlatFile.Templates.CSV\EdiFabric.Examples.FlatFile.Write1.csproj">
+      <Project>{a07b1945-6d5a-486d-9327-066f44e75ad4}</Project>
+      <Name>EdiFabric.Examples.FlatFile.Write1</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

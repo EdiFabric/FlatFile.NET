@@ -1,7 +1,6 @@
-﻿using EdiFabric.Templates.FlatFile;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace EdiFabric.Examples.FlatFile.Templates.CSV
+namespace EdiFabric.Examples.FlatFile.Common
 {
     public class POBuilder
     {

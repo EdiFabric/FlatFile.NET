@@ -1,12 +1,11 @@
 ﻿using EdiFabric.Examples.FlatFile.Common;
-using EdiFabric.Examples.FlatFile.Templates.CSV;
 using EdiFabric.Framework.Writers;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Text;
 
-namespace EdiFabric.Examples.FlatFile.Console.CSV
+namespace EdiFabric.Examples.FlatFile.Write
 {
     class WriteCSVFileAsync
     {
@@ -23,7 +22,7 @@ namespace EdiFabric.Examples.FlatFile.Console.CSV
             {
                 using (var writer = new StreamWriter(stream, Encoding.UTF8, 4096, true))
                 {
-                    using (var flatWriter = new FlatWriter(writer))
+                    using (var flatWriter = new FlatWriter(writer, null, TrialLicense.SerialNumber))
                     {
                         var flatPO = POBuilder.BuildFlatPO();
                         await flatWriter.WriteAsync(flatPO);

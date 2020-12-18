@@ -4,7 +4,7 @@ using EdiFabric.Core.Annotations.Edi;
 using EdiFabric.Core.Annotations.Validation;
 using EdiFabric.Core.Model.Edi;
 
-namespace EdiFabric.Templates.FlatFile
+namespace EdiFabric.Examples.FlatFile.Common
 {
     [Serializable()]
     [Message("Flat", "PO")]

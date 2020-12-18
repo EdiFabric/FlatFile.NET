@@ -1,11 +1,11 @@
 ﻿using EdiFabric.Framework.Readers;
-using EdiFabric.Templates.FlatFile;
+using EdiFabric.Examples.FlatFile.Common;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Text;
 
-namespace EdiFabric.Examples.FlatFile.Console.CSV
+namespace EdiFabric.Examples.FlatFile.Read
 {
     class ReadCSVFile
     {
@@ -22,7 +22,7 @@ namespace EdiFabric.Examples.FlatFile.Console.CSV
 
             using (StreamReader streamReader = new StreamReader(ediStream, Encoding.UTF8, true, 1024))
             {
-                using (var csvReader = new FlatReader(streamReader, typeof(FlatPO)))
+                using (var csvReader = new FlatReader(streamReader, typeof(FlatPO), TrialLicense.SerialNumber))
                 {
                     var result = csvReader.ReadToEnd() as FlatPO;
                 }
@@ -42,7 +42,7 @@ namespace EdiFabric.Examples.FlatFile.Console.CSV
 
             using (StreamReader streamReader = new StreamReader(ediStream, Encoding.UTF8, true, 1024))
             {
-                using (var csvReader = new FlatReader(streamReader, typeof(FlatMarkers)))
+                using (var csvReader = new FlatReader(streamReader, typeof(FlatMarkers), TrialLicense.SerialNumber))
                 {
                     var result = csvReader.ReadToEnd() as FlatMarkers;
                 }

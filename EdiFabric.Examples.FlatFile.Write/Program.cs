@@ -1,13 +1,9 @@
-﻿namespace EdiFabric.Examples.FlatFile.Console.CSV
+﻿namespace EdiFabric.Examples.FlatFile.Write
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //ReadCSVFile.Run();
-            ReadCSVFile.Run2();
-            ReadCSVFileAsync.Run();
-
             WriteCSVFile.Run();
             WriteCSVFileAsync.Run();
         }

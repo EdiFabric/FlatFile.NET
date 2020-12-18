@@ -1,30 +1,30 @@
 ﻿using EdiFabric.Framework.Readers;
-using EdiFabric.Templates.Vda;
+using EdiFabric.Examples.FlatFile.Common;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Text;
 
-namespace EdiFabric.Examples.FlatFile.Console.VDA
+namespace EdiFabric.Examples.FlatFile.Read
 {
-    class ReadVDAFile
+    class ReadCSVFileAsync
     {
         /// <summary>
-        /// Reads VDA file into the template.
+        /// Reads custom CSV file into the template async.
         /// </summary>
-        public static void Run()
+        public static async void Run()
         {
             Debug.WriteLine("******************************");
             Debug.WriteLine(MethodBase.GetCurrentMethod().Name);
             Debug.WriteLine("******************************");
 
-            Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + @"\..\..\..\Files\VDA\Vda_4905_02.txt");
+            Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + @"\..\..\..\Files\CSV\Flat_PO.txt");
 
             using (StreamReader streamReader = new StreamReader(ediStream, Encoding.UTF8, true, 1024))
             {
-                using (var vdaReader = new FlatReader(streamReader, typeof(TS4905)))
+                using (var csvReader = new FlatReader(streamReader, typeof(FlatPO), TrialLicense.SerialNumber))
                 {
-                    var result = vdaReader.ReadToEnd() as TS4905;
+                    var result = await csvReader.ReadToEndAsync() as FlatPO;
                 }
             }
         }
