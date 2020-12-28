@@ -6,7 +6,7 @@ namespace EdiFabric.Examples.FlatFile.Write
     {
         static void Main(string[] args)
         {
-            SerialKey.Set(TrialLicense.SerialKey);
+            SerialKey.Set(Common.SerialKey.Get());
             WriteCSVFile.Run();
             WriteCSVFileAsync.Run();
         }

@@ -49,7 +49,7 @@
     <Compile Include="POBuilder.cs" />
     <Compile Include="StreamExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TrialLicense.cs" />
+    <Compile Include="SerialKey.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
