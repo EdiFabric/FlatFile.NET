@@ -22,7 +22,7 @@ namespace EdiFabric.Examples.FlatFile.Write
             {
                 using (var writer = new StreamWriter(stream, Encoding.UTF8, 4096, true))
                 {
-                    using (var flatWriter = new FlatWriter(writer, null, TrialLicense.SerialNumber))
+                    using (var flatWriter = new FlatWriter(writer, null))
                     {
                         var flatPO = POBuilder.BuildFlatPO();
                         await flatWriter.WriteAsync(flatPO);

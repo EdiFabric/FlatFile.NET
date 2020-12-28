@@ -22,7 +22,7 @@ namespace EdiFabric.Examples.FlatFile.Read
 
             using (StreamReader streamReader = new StreamReader(ediStream, Encoding.UTF8, true, 1024))
             {
-                using (var csvReader = new FlatReader(streamReader, typeof(FlatPO), TrialLicense.SerialNumber))
+                using (var csvReader = new FlatReader(streamReader, typeof(FlatPO)))
                 {
                     var result = await csvReader.ReadToEndAsync() as FlatPO;
                 }

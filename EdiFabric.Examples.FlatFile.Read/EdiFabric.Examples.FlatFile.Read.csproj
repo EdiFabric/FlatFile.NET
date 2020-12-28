@@ -32,11 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EdiFabric.Core, Version=9.8.7.5, Culture=neutral, PublicKeyToken=30198c5f4974e51a, processorArchitecture=MSIL">
-      <HintPath>..\packages\EdiFabric.Core.9.8.7.5\lib\net45\EdiFabric.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="EdiFabric.Framework, Version=9.8.7.5, Culture=neutral, PublicKeyToken=30198c5f4974e51a, processorArchitecture=MSIL">
-      <HintPath>..\packages\EdiFabric.Framework.9.8.7.5\lib\net45\EdiFabric.Framework.dll</HintPath>
+    <Reference Include="EdiFabric, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30198c5f4974e51a, processorArchitecture=MSIL">
+      <HintPath>..\packages\EdiFabric.Trial.10.0.0\lib\net45\EdiFabric.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -61,10 +58,6 @@
     <ProjectReference Include="..\EdiFabric.Examples.FlatFile.Common\EdiFabric.Examples.FlatFile.Common.csproj">
       <Project>{9ee73a43-c18b-44ec-962f-064caa2c3c66}</Project>
       <Name>EdiFabric.Examples.FlatFile.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EdiFabric.Examples.FlatFile.Templates.CSV\EdiFabric.Examples.FlatFile.Write1.csproj">
-      <Project>{a07b1945-6d5a-486d-9327-066f44e75ad4}</Project>
-      <Name>EdiFabric.Examples.FlatFile.Write1</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
