@@ -51,7 +51,7 @@ Then uninstall the NuGet packages from each project and replace them with DLL re
 The serial key is included in the file serial.key in folder edifabric-trial. Ensure it is there and that the file is not empty. The serial key is loaded in the file SerialKey.cs in project EdiFabric.Examples.FlatFile.Common. Open the file and ensure that the serialKeyPath is correct.
 If the serial key is invalid or the file is missing, contact us at https://support.edifabric.com/hc/en-us/requests/new for assistance.  
 
-## 7. Gettings started
+## 7. Getting started
 To get started, set project EdiFabric.Examples.FlatFile.Read as the startup project, open ReadCSVFile.cs and run it.  
 
 ## 8. Examples by feature
