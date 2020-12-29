@@ -77,5 +77,5 @@ implied warranties of merchantability and/or fitness for a particular purpose.*
 
 [Support](https://support.edifabric.com/hc/en-us/requests/new)
 
-Last updated on December 16, 2020
-### 2020 © EdiFabric
+Last updated on December 29, 2020
+### 2021 © EdiFabric
