@@ -14,12 +14,10 @@ The examples are organized into different projects in two logical categories: by
 Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + @"\..\..\..\Files\Flat_PO.txt");
 
 using (StreamReader streamReader = new StreamReader(ediStream, Encoding.UTF8, true, 1024))
-{
     using (var csvReader = new FlatReader(streamReader, typeof(FlatPO)))
     {
         var result = csvReader.ReadToEnd() as FlatPO;
     }
-}
 ```
 
 ## 2. Requirements
