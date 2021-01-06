@@ -8,7 +8,19 @@ It currently supports all message types for the X12 and EDIFACT EDI standards, t
 > NOTE: EdiFabric does not provide any communication components (AS2 or SFTP, for example), has no dashboard or UI, and is not a full end-to-end EDI solution.
 The best option to get the gist of what EdiFabric is, and can do, is to play around with the trial and examples.  
 
-The examples are organized into different projects in two logical categories: by product feature and by message type.    
+The examples are organized into different projects in two logical categories: by product feature and by message type.   
+
+```
+Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + @"\..\..\..\Files\Flat_PO.txt");
+
+using (StreamReader streamReader = new StreamReader(ediStream, Encoding.UTF8, true, 1024))
+{
+    using (var csvReader = new FlatReader(streamReader, typeof(FlatPO)))
+    {
+        var result = csvReader.ReadToEnd() as FlatPO;
+    }
+}
+```
 
 ## 2. Requirements
 - Visual Studio, compatible with the supported .NET versions.  
