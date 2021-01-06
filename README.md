@@ -10,7 +10,7 @@ The best option to get the gist of what EdiFabric is, and can do, is to play aro
 
 The examples are organized into different projects in two logical categories: by product feature and by message type.   
 
-```
+```C#
 Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + @"\..\..\..\Files\Flat_PO.txt");
 
 using (StreamReader streamReader = new StreamReader(ediStream, Encoding.UTF8, true, 1024))
