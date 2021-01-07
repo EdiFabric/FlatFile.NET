@@ -25,59 +25,32 @@ using (StreamReader streamReader = new StreamReader(ediStream, Encoding.UTF8, tr
 - Minimum .NET Framework 4.5 or .NET Core 3.1. All projects target .NET Framework 4.5, however, the Target Framework from each project's properties can be changed to .NET Core 3.1.  
 - EdiFabric trial NuGet packages and serial key.  
 
-## 3. Download
-Before you use the repository, you need to download the trial NuGet packages and the serial key.  
-
-### [Download EdiFabric Trial](https://sowl.co/oApEt) 
-
-## 4. Install
-Unzip the downloaded file in the previous step. The following folders should be available at the same level:  
-
-edifabric-examples-edifact  
-edifabric-examples-flatfile  
-edifabric-examples-vda  
-edifabric-examples-x12  
-edifabric-trial  
-
-Ensure that the following packages are present in folder edifabric-trial:  
-
-EdiFabric.Trial.10.0.0.nupkg  
-EdiFabric.Templates.Edifact.2.1.0.nupkg  
-EdiFabric.Templates.Hipaa.2.1.0.nupkg  
-EdiFabric.Templates.Padis.2.1.0.nupkg  
-EdiFabric.Templates.Vda.2.1.0.nupkg  
-EdiFabric.Templates.X12.2.1.0.nupkg  
-
-## 5. Setup
-Add folder edifabric-trial as a package source in Visual Studio:  
-- From the top menu in Visual Studio go to *Tools -> NuGet Package Manager -> Package Manager Settings -> Package Sources*  
-- Add a new package source (by clicking the green plus button), then name it "EdiFabric Trial" and browse to select the edifabric-trial folder as the Source.  
-- Click the Update button to apply the changes and then click OK to close the dialog.  
-
+## 3. Setup
 Rebuild the solution to install the rest of the dependencies. If there are any build errors, contact us at https://support.edifabric.com/hc/en-us/requests/new for assistance.  
 
 > NOTE: it is possible to also reference DLLs instead of NuGet packages. Change the .nupkg extension of the packages to .zip, unzip them, and extract the DLL files. 
 Then uninstall the NuGet packages from each project and replace them with DLL references.  
 
-## 6. Serial Key
+## 4. Serial Key
+[Download the serial key](https://sowl.co/oApEt).
 The serial key is included in the file serial.key in folder edifabric-trial. Ensure it is there and that the file is not empty. The serial key is loaded in the file SerialKey.cs in project EdiFabric.Examples.FlatFile.Common. Open the file and ensure that the serialKeyPath is correct.
 If the serial key is invalid or the file is missing, contact us at https://support.edifabric.com/hc/en-us/requests/new for assistance.  
 
-## 7. Getting started
+## 5. Getting started
 To get started, set project EdiFabric.Examples.FlatFile.Read as the startup project, open ReadCSVFile.cs and run it.  
 
-## 8. Examples by feature
+## 6. Examples by feature
 Explore the different features of EdiFabric, such as translating from flat file file (Read) and generating flat file file (Write).  
 
-## 9. Trial use
+## 7. Trial use
 The trial assemblies are valid for 14 days and are subject to EdiFabric's license terms available at https://www.edifabric.com/files/eula.pdf. Upon expiry, the trial packages will begin throwing exceptions.   
 To continue using the trial and the examples, you'll need to either request a trial extension or replace the trial packages, together with all references to the trial packages, with the full version of EdiFabric.   
 
-## 10. Warranty
+## 8. Warranty
 *The source code in these example projects is strictly for demonstrational purposes and is provided "AS IS" without warranty of any kind, whether expressed or implied, including but not limited to the
 implied warranties of merchantability and/or fitness for a particular purpose.*  
 
-## 11. Additional information
+## 9. Additional information
 
 [Install EdiFabric](https://support.edifabric.com/hc/en-us/articles/360016808578-Install-EdiFabric)
 
@@ -89,5 +62,5 @@ implied warranties of merchantability and/or fitness for a particular purpose.*
 
 [Support](https://support.edifabric.com/hc/en-us/requests/new)
 
-Last updated on December 29, 2020
+Last updated on January 7, 2021
 ### 2021 © EdiFabric
