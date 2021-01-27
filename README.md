@@ -1,4 +1,4 @@
-# EdiFabric Examples for Flat and CSV Files
+# EdiFabric C# .NET Examples for Flat and CSV Files
 
 ## 1. Overview
 EdiFabric is a software development kit for .NET Framework and .NET Core, which makes it straightforward to parse, generate, validate, acknowledge, split, customize, or in other words, to programmatically manipulate EDI files. It is written in C# and is distributed as a set of NuGet packages and C# files.  
