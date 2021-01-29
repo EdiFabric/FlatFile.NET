@@ -10,7 +10,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample files", "Sample files", "{83826218-AB92-4585-A88D-04805772CABD}"
 	ProjectSection(SolutionItems) = preProject
 		Files\Flat_Markers.txt = Files\Flat_Markers.txt
+		Files\Flat_Multiple.txt = Files\Flat_Multiple.txt
 		Files\Flat_PO.txt = Files\Flat_PO.txt
+		Files\Flat_Split.txt = Files\Flat_Split.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Getting started", "_Getting started", "{61FAFD63-3584-4C7E-8334-D76B985F53ED}"

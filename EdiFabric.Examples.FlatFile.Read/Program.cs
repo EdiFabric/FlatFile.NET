@@ -10,7 +10,9 @@ namespace EdiFabric.Examples.FlatFile.Read
 
             ReadCSVFile.Run();
             ReadCSVFile.Run2();
-            ReadCSVFileAsync.Run();           
+            ReadCSVFile.Run3();
+            ReadCSVFileAsync.Run();
+            ReadCSVFileWithSplitting.Run();
         }
     }
 }

@@ -1,0 +1,10 @@
+PO1999-10-20
+US        Alice Smith         123 Maple Street    Mill Valley    CA 90952
+US        Robert Smith        8 Oak Avenue        Old Town       PA 95819
+ITEMS,ITEM872-AA|Lawnmower|1|148.95|Confirm this is electric,ITEM926-AA|Baby Monitor|1|39.98|Confirm this is electric
+
+H,1999-10-20
+B,Alice,Smith
+CorruptBodyTag,Robert,Smith
+B,Robert,Smith,test
+T,1999-10-21

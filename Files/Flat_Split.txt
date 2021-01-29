@@ -1,0 +1,5 @@
+PO1999-10-20
+US        Alice Smith         123 Maple Street    Mill Valley    CA 90952
+US        Robert Smith        8 Oak Avenue        Old Town       PA 95819
+US        Dwayne Smith        8 Oak Avenue        Old Town       PA 95819
+ITEMS,ITEM872-AA|Lawnmower|1|148.95|Confirm this is electric,ITEM926-AA|Baby Monitor|1|39.98|Confirm this is electric
