@@ -84,6 +84,30 @@ namespace EdiFabric.Examples.FlatFile.Read
             }
         }
 
+        /// <summary>
+        /// Reads custom CSV file.
+        /// </summary>
+        public static void Run4()
+        {
+            Debug.WriteLine("******************************");
+            Debug.WriteLine(MethodBase.GetCurrentMethod().Name);
+            Debug.WriteLine("******************************");
+
+            Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + @"\..\..\..\Files\CSV_PO.txt");
+            List<IEdiItem> items = new List<IEdiItem>();
+
+            using (StreamReader streamReader = new StreamReader(ediStream, Encoding.UTF8, true, 1024))
+            {
+                using (var flatReader = new FlatReader(streamReader, FlatFactory))
+                {
+                    while (flatReader.Read())
+                    {
+                        items.Add(flatReader.Item);
+                    }
+                }
+            }
+        }
+
         private static MessageContext FlatFactory(string segment)
         {
             var id = segment.Substring(0, 2);
@@ -93,6 +117,8 @@ namespace EdiFabric.Examples.FlatFile.Read
                     return new MessageContext("PO", "Flat", mc => Assembly.Load(new AssemblyName("EdiFabric.Examples.FlatFile.Common")));
                 case "H,":
                     return new MessageContext("Markers", "Flat", mc => Assembly.Load(new AssemblyName("EdiFabric.Examples.FlatFile.Common")));
+                case "LI":
+                    return new MessageContext("PurchaseOrder", "Flat", mc => Assembly.Load(new AssemblyName("EdiFabric.Examples.FlatFile.Common")));
             }
 
             return null;

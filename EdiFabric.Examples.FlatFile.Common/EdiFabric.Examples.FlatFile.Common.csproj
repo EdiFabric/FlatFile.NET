@@ -47,6 +47,7 @@
     <Compile Include="EF_Flat_Markers.cs" />
     <Compile Include="EF_Flat_PO.cs" />
     <Compile Include="POBuilder.cs" />
+    <Compile Include="PurchaseOrder.cs" />
     <Compile Include="StreamExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SerialKey.cs" />
