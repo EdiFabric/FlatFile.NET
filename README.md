@@ -23,18 +23,16 @@ using (StreamReader streamReader = new StreamReader(ediStream, Encoding.UTF8, tr
 ## 2. Requirements
 - Visual Studio, compatible with the supported .NET versions.  
 - Minimum .NET Framework 4.5 or .NET Core 3.1. All projects target .NET Framework 4.5, however, the Target Framework from each project's properties can be changed to .NET Core 3.1.  
-- EdiFabric trial NuGet packages and serial key.  
+- EdiFabric trial DLLs and serial number.
 
-## 3. Setup
-Rebuild the solution to install EdiFabric Trial from nuget.org. If there are any build errors, contact us at https://support.edifabric.com/hc/en-us/requests/new for assistance.  
-
-> NOTE: it is possible to also reference DLLs instead of NuGet packages. Change the .nupkg extension of the packages to .zip, unzip them, and extract the DLL files. 
-Then uninstall the NuGet packages from each project and replace them with DLL references.  
-
-## 4. Serial Key
+## 3. Serial Key and EdiFabric trial DLLs
 [Download the serial key](https://sowl.co/oApEt).
 The serial key is included in the file serial.key in folder edifabric-trial. Ensure it is there and that the file is not empty. The serial key is loaded in the file SerialKey.cs in project EdiFabric.Examples.FlatFile.Common. Open the file and ensure that the serialKeyPath is correct.
 If the serial key is invalid or the file is missing, contact us at https://support.edifabric.com/hc/en-us/requests/new for assistance.  
+The trial DLLs are in folders net45 (for .NET Framework 4.5+) and netcoreapp3.1 (for .NET Core 3.1+).
+
+## 4. Setup
+Rebuild the solution. If there are any build errors, contact us at https://support.edifabric.com/hc/en-us/requests/new for assistance.  
 
 ## 5. Getting started
 To get started, set project EdiFabric.Examples.FlatFile.Read as the startup project, open ReadCSVFile.cs and run it.  
@@ -62,5 +60,5 @@ implied warranties of merchantability and/or fitness for a particular purpose.*
 
 [Support](https://support.edifabric.com/hc/en-us/requests/new)
 
-Last updated on January 7, 2021
-### 2021 © EdiFabric
+Last updated on November 22, 2022
+### 2022 © EdiFabric
