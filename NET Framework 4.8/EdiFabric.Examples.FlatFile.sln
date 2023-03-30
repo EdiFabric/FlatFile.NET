@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30517.126
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples by feature", "Examples by feature", "{2423E7ED-FB37-4CDA-B7D4-4D4C70028615}"
 EndProject
@@ -9,16 +9,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiFabric.Examples.FlatFile
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample files", "Sample files", "{83826218-AB92-4585-A88D-04805772CABD}"
 	ProjectSection(SolutionItems) = preProject
-		Files\CSV_PO.txt = Files\CSV_PO.txt
-		Files\Flat_Markers.txt = Files\Flat_Markers.txt
-		Files\Flat_Multiple.txt = Files\Flat_Multiple.txt
-		Files\Flat_PO.txt = Files\Flat_PO.txt
-		Files\Flat_Split.txt = Files\Flat_Split.txt
+		..\Files\CSV_PO.txt = ..\Files\CSV_PO.txt
+		..\Files\Flat_Markers.txt = ..\Files\Flat_Markers.txt
+		..\Files\Flat_Multiple.txt = ..\Files\Flat_Multiple.txt
+		..\Files\Flat_PO.txt = ..\Files\Flat_PO.txt
+		..\Files\Flat_Split.txt = ..\Files\Flat_Split.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Getting started", "_Getting started", "{61FAFD63-3584-4C7E-8334-D76B985F53ED}"
 	ProjectSection(SolutionItems) = preProject
-		README.txt = README.txt
+		..\README.txt = ..\README.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiFabric.Examples.FlatFile.Write", "EdiFabric.Examples.FlatFile.Write\EdiFabric.Examples.FlatFile.Write.csproj", "{AC2419D8-7E7A-4F53-A2C6-C21A5D265C02}"

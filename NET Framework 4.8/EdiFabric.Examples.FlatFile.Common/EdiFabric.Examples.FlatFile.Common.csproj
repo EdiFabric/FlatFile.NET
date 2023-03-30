@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9D196BA5-263A-4D42-9891-327A19B29A40}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>EdiFabric.Examples.FlatFile.Read</RootNamespace>
-    <AssemblyName>EdiFabric.Examples.FlatFile.Read</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProjectGuid>{9EE73A43-C18B-44EC-962F-064CAA2C3C66}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EdiFabric.Examples.FlatFile.Common</RootNamespace>
+    <AssemblyName>EdiFabric.Examples.FlatFile.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +24,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,8 +33,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EdiFabric, Version=10.4.3.0, Culture=neutral, PublicKeyToken=30198c5f4974e51a, processorArchitecture=MSIL">
-      <HintPath>..\..\edifabric-trial\net45\EdiFabric.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\edifabric\net48\EdiFabric.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,20 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="EF_Flat_Markers.cs" />
+    <Compile Include="EF_Flat_PO.cs" />
+    <Compile Include="POBuilder.cs" />
+    <Compile Include="PurchaseOrder.cs" />
+    <Compile Include="StreamExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReadCSVFileAsync.cs" />
-    <Compile Include="ReadCSVFile.cs" />
-    <Compile Include="ReadCSVFileWithSplitting.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\EdiFabric.Examples.FlatFile.Common\EdiFabric.Examples.FlatFile.Common.csproj">
-      <Project>{9ee73a43-c18b-44ec-962f-064caa2c3c66}</Project>
-      <Name>EdiFabric.Examples.FlatFile.Common</Name>
-    </ProjectReference>
+    <Compile Include="SerialKey.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
