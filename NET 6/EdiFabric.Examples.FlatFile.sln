@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Getting started", "_Getting started", "{103E4C39-8380-4BFE-A181-812DF6EE83A0}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.txt = ..\README.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples by feature", "Examples by feature", "{091267BB-F072-4F64-9DA0-8CF886F88D86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample files", "Sample files", "{EEC39848-BE18-4890-AD66-3CF37CAF0A4A}"
+	ProjectSection(SolutionItems) = preProject
+		..\Files\CSV_PO.txt = ..\Files\CSV_PO.txt
+		..\Files\Flat_Markers.txt = ..\Files\Flat_Markers.txt
+		..\Files\Flat_Multiple.txt = ..\Files\Flat_Multiple.txt
+		..\Files\Flat_PO.txt = ..\Files\Flat_PO.txt
+		..\Files\Flat_Split.txt = ..\Files\Flat_Split.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiFabric.Examples.FlatFile.Common", "EdiFabric.Examples.FlatFile.Common\EdiFabric.Examples.FlatFile.Common.csproj", "{0E420608-12BA-4313-A518-29EF8314AA49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiFabric.Examples.FlatFile.Read", "EdiFabric.Examples.FlatFile.Read\EdiFabric.Examples.FlatFile.Read.csproj", "{0579447C-362F-4FBC-AEE7-D450FE9E3E6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdiFabric.Examples.FlatFile.Write", "EdiFabric.Examples.FlatFile.Write\EdiFabric.Examples.FlatFile.Write.csproj", "{D60871F1-0965-4889-BE20-3476C7374A84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E420608-12BA-4313-A518-29EF8314AA49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E420608-12BA-4313-A518-29EF8314AA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E420608-12BA-4313-A518-29EF8314AA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E420608-12BA-4313-A518-29EF8314AA49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0579447C-362F-4FBC-AEE7-D450FE9E3E6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0579447C-362F-4FBC-AEE7-D450FE9E3E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0579447C-362F-4FBC-AEE7-D450FE9E3E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0579447C-362F-4FBC-AEE7-D450FE9E3E6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D60871F1-0965-4889-BE20-3476C7374A84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D60871F1-0965-4889-BE20-3476C7374A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D60871F1-0965-4889-BE20-3476C7374A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D60871F1-0965-4889-BE20-3476C7374A84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0579447C-362F-4FBC-AEE7-D450FE9E3E6D} = {091267BB-F072-4F64-9DA0-8CF886F88D86}
+		{D60871F1-0965-4889-BE20-3476C7374A84} = {091267BB-F072-4F64-9DA0-8CF886F88D86}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4D1F9A3-D11A-4C83-B1FE-E96ED399B4F4}
+	EndGlobalSection
+EndGlobal

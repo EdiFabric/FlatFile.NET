@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Common\EF_Flat_Markers.cs" Link="EF_Flat_Markers.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Common\EF_Flat_PO.cs" Link="EF_Flat_PO.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Common\POBuilder.cs" Link="POBuilder.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Common\PurchaseOrder.cs" Link="PurchaseOrder.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Common\SerialKey.cs" Link="SerialKey.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Common\StreamExtensions.cs" Link="StreamExtensions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EdiFabric">
+      <HintPath>..\..\..\edifabric\net48\EdiFabric.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

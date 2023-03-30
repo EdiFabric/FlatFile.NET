@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Write\Program.cs" Link="Program.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Write\WriteCSVFile.cs" Link="WriteCSVFile.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Write\WriteCSVFileAsync.cs" Link="WriteCSVFileAsync.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EdiFabric.Examples.FlatFile.Common\EdiFabric.Examples.FlatFile.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EdiFabric">
+      <HintPath>..\..\..\edifabric\net6.0\EdiFabric.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
