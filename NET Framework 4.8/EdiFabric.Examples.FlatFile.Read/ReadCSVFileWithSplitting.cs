@@ -24,7 +24,7 @@ namespace EdiFabric.Examples.FlatFile.Read
             Debug.WriteLine(MethodBase.GetCurrentMethod().Name);
             Debug.WriteLine("******************************");
 
-            Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + @"\..\..\..\Files\Flat_Split.txt");
+            Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + Config.TestFilesPath + @"\Flat_Split.txt");
             List<IEdiItem> items = new List<IEdiItem>();
 
             using (StreamReader streamReader = new StreamReader(ediStream, Encoding.UTF8, true, 1024))

@@ -6,6 +6,7 @@ using System.Text;
 using EdiFabric.Core.Model.Edi;
 using System.Collections.Generic;
 using EdiFabric.Framework;
+using EdiFabric.Examples.FlatFile.Common;
 
 namespace EdiFabric.Examples.FlatFile.Read
 {
@@ -20,7 +21,7 @@ namespace EdiFabric.Examples.FlatFile.Read
             Debug.WriteLine(MethodBase.GetCurrentMethod().Name);
             Debug.WriteLine("******************************");
 
-            Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + @"\..\..\..\Files\Flat_PO.txt");
+            Stream ediStream = File.OpenRead(Directory.GetCurrentDirectory() + Config.TestFilesPath + @"\Flat_PO.txt");
             List<IEdiItem> items = new List<IEdiItem>();
 
             using (StreamReader streamReader = new StreamReader(ediStream, Encoding.UTF8, true, 1024))

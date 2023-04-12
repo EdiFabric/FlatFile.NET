@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config.cs" />
     <Compile Include="EF_Flat_Markers.cs" />
     <Compile Include="EF_Flat_PO.cs" />
     <Compile Include="POBuilder.cs" />
