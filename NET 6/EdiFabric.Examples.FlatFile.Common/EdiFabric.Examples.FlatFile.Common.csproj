@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Common\Config.cs" Link="Config.cs" />
     <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Common\EF_Flat_Markers.cs" Link="EF_Flat_Markers.cs" />
     <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Common\EF_Flat_PO.cs" Link="EF_Flat_PO.cs" />
     <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Common\POBuilder.cs" Link="POBuilder.cs" />
