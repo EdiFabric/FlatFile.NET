@@ -14,13 +14,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EdiFabric.Examples.FlatFile.Common\EdiFabric.Examples.FlatFile.Common.csproj" />
+    <PackageReference Include="EdiFabric" Version="10.5.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="EdiFabric">
-      <HintPath>..\..\..\edifabric\net6.0\EdiFabric.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\EdiFabric.Examples.FlatFile.Common\EdiFabric.Examples.FlatFile.Common.csproj" />
   </ItemGroup>
 
 </Project>

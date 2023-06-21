@@ -17,9 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="EdiFabric">
-      <HintPath>..\..\..\edifabric\net48\EdiFabric.dll</HintPath>
-    </Reference>
+    <PackageReference Include="EdiFabric" Version="10.5.2" />
   </ItemGroup>
 
 </Project>
