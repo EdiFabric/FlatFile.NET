@@ -6,7 +6,7 @@ namespace EdiFabric.Examples.FlatFile.Read
     {
         static void Main(string[] args)
         {
-            SerialKey.Set(Common.SerialKey.Get());
+            TokenFileCache.Set();
 
             ReadCSVFile.Run();
             ReadCSVFile.Run2();

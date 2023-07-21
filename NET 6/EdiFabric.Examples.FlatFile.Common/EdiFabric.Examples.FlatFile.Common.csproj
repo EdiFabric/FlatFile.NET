@@ -12,12 +12,12 @@
     <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Common\EF_Flat_PO.cs" Link="EF_Flat_PO.cs" />
     <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Common\POBuilder.cs" Link="POBuilder.cs" />
     <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Common\PurchaseOrder.cs" Link="PurchaseOrder.cs" />
-    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Common\SerialKey.cs" Link="SerialKey.cs" />
     <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Common\StreamExtensions.cs" Link="StreamExtensions.cs" />
+    <Compile Include="..\..\NET Framework 4.8\EdiFabric.Examples.FlatFile.Common\TokenFileCache.cs" Link="TokenFileCache.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="EdiFabric" Version="10.6.0" />
+    <PackageReference Include="EdiFabric" Version="10.6.3" />
   </ItemGroup>
 
 </Project>
