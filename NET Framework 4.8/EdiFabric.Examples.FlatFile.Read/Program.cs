@@ -6,7 +6,9 @@ namespace EdiFabric.Examples.FlatFile.Read
     {
         static void Main(string[] args)
         {
-            TokenFileCache.Set();
+            SerialKey.Set(Config.TrialSerialKey);
+            //  Uncomment and then comment out the line above if you wish to use distributed cache for tokens
+            //   SerialKey.Set(Config.TrialSerialKey);
 
             ReadCSVFile.Run();
             ReadCSVFile.Run2();
