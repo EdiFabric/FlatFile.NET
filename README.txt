@@ -5,10 +5,10 @@ The examples are organized into different projects by product feature. All examp
 
 2. Requirements
 - Visual Studio, compatible with the supported .NET versions
-- Minimum .NET Framework 4.8 or .NET 6. Downgrade to .NET Framework 4.5 is possible by changing the target framework for each project.
+- Minimum .NET Framework 4.8 or .NET 6. 
 
 3. Serial Key and EdiFabric DLLs
-All projects reference EdiFabric EDI Tools as NuGet packages from nuget.org. If you wish to install EdiFabric EDI Tools as DLLs, download the trial DLLs from https://sowl.co/oApEt. 
+All projects reference EdiFabric EDI Tools as NuGet packages from nuget.org. 
 
 4. Setup
 Rebuild the solution with Package Restore enabled. If there are any build errors, manually install the missing packages from https://www.nuget.org/packages?q=edifabric.
@@ -44,5 +44,5 @@ https://support.edifabric.com
 Support
 https://support.edifabric.com/hc/en-us/requests/new
 
-Last updated on June 20, 2023
-2023 © EdiFabric
+Last updated on January 29, 2026
+2026 © EdiFabric
