@@ -22,7 +22,7 @@ using (StreamReader streamReader = new StreamReader(ediStream, Encoding.UTF8, tr
 
 ## 2. Requirements
 - Visual Studio, compatible with the supported .NET versions. [Download Visual Studio](https://visualstudio.microsoft.com/downloads/).
-- Minimum .NET Framework 4.8 or .NET 6. Downgrade to .NET Framework 4.5 is possible by changing the target framework for each project.  
+- Minimum .NET Framework 4.8 or .NET 6.
 
 ## 3. Serial Key and EdiFabric DLLs
 All projects reference EdiFabric EDI Tools as NuGet packages from nuget.org. If you wish to install EdiFabric EDI Tools as DLLs, download the trial DLLs from [here](https://support.edifabric.com/hc/en-us/articles/360000280532-Free-code-to-master-you-EDI-files).  
@@ -55,5 +55,5 @@ implied warranties of merchantability and/or fitness for a particular purpose.*
 
 [Support](https://support.edifabric.com/hc/en-us/requests/new)
 
-Last updated on June 20, 2023
-### 2023 © EdiFabric
+Last updated on January 29, 2026
+### 2026 © EdiFabric
