@@ -21,7 +21,7 @@ The .NET 6 projects compile the same sources as the .NET Framework 4.8 projects.
 - .NET 6 for `NET 6/EdiFabric.Examples.FlatFile.sln`. The projects set `<TargetFramework>net6.0</TargetFramework>` so they stay compatible with existing .NET 6 apps. EdiFabric 11.0.0 also provides `net8.0`, `net9.0`, and `net10.0`. To evaluate a later version, change that property (for example to `net8.0`) and rebuild.
 - .NET Framework 4.8 for `NET Framework 4.8/EdiFabric.Examples.FlatFile.sln`.
 
-1. [Sign up free for **Community**](https://www.edifabric.com/pricing.html) to get an evaluation serial key. Community never expires, requires no credit card, and is limited to 250 operations per day for non-production use. After signup, retrieve your serial from [Your Account](https://support.edifabric.com/hc/en-us/articles/360007159031-Your-Account-API-key).
+1. [Sign up free for **Community**](https://www.edifabric.com/pricing.html) to get an evaluation serial key. Community never expires, requires no credit card, and is limited to 250 operations per day for non-production use. After signup, retrieve your serial from [Your Account](https://www.edifabric.com/docs/getting-started/your-account.html).
 2. Paste that serial into `TrialSerialKey` in `NET Framework 4.8/EdiFabric.Examples.FlatFile.Common/Config.cs`. The .NET 6 projects link this file, so one edit covers both solutions.
 
 NuGet restore pulls **EdiFabric 11.0.0**. The flat-file models are C# classes in `EdiFabric.Examples.FlatFile.Common`, not a template NuGet package.
@@ -94,7 +94,7 @@ For another layout, add a C# model to `EdiFabric.Examples.FlatFile.Common` and r
 > to get an evaluation serial key. Community never expires, requires no credit
 > card, and is for non-production evaluation, learning, and prototyping
 > (250 operations per day). After signup, copy your serial from
-> [Your Account](https://support.edifabric.com/hc/en-us/articles/360007159031-Your-Account-API-key)
+> [Your Account](https://www.edifabric.com/docs/getting-started/your-account.html)
 > into `Config.TrialSerialKey`.
 >
 > One operation is one parse, generate, validate, or acknowledge call. The 250-a-day
@@ -169,9 +169,9 @@ Custom flat files are plain C# classes. These examples already include them in `
 
 The standard EDI models published on NuGet, such as **EdiFabric.Templates.X12** and **EdiFabric.Templates.Edifact**, are for evaluation only. They are a Community plan limitation.
 
-Paid plans provide every EDI template as plain C# files. Add them to the solution by following [How to create EDI template projects](https://support.edifabric.com/hc/en-us/articles/360016750838-How-to-create-EDI-Template-projects). For evaluation and the Community plan, you can still download the templates in compiled form by following the same article.
+Paid plans provide every EDI template as plain C# files. Add them to the solution by following [How to create EDI template projects](https://www.edifabric.com/docs/edifabric-net/edi-templates.html). For evaluation and the Community plan, you can still download the templates in compiled form by following the same article.
 
-- [EDI to CSV](https://support.edifabric.com/hc/en-us/articles/360012781291-EDI-to-CSV)
+- [EDI to CSV](https://www.edifabric.com/docs/edifabric-net/edi-to-csv.html)
 - [EdiNation spec library](https://edination.edifabric.com/edi-spec-library.html) (no registration)
 
 ## Warranty
@@ -180,13 +180,13 @@ The source code in these example projects is strictly for demonstrational purpos
 
 ## Links
 
-- [Install EdiFabric](https://support.edifabric.com/hc/en-us/articles/360016808578-Install-EdiFabric)
-- [Tutorial](https://support.edifabric.com/hc/en-us/articles/360000291511-Tutorial-EDI-NET-Tools-Basics)
-- [EDI to CSV](https://support.edifabric.com/hc/en-us/articles/360012781291-EDI-to-CSV)
-- [Knowledge base](https://support.edifabric.com)
+- [Install EdiFabric](https://www.edifabric.com/docs/edifabric-net/install.html)
+- [Tutorial](https://www.edifabric.com/docs/edifabric-net/edi-tools-for-net-tutorial-part-1.html)
+- [EDI to CSV](https://www.edifabric.com/docs/edifabric-net/edi-to-csv.html)
+- [Knowledge base](https://www.edifabric.com/docs/index.html)
 - [Community plan (free signup)](https://www.edifabric.com/pricing.html)
-- [Your Account](https://support.edifabric.com/hc/en-us/articles/360007159031-Your-Account-API-key)
-- [Support](https://support.edifabric.com/hc/en-us/requests/new)
+- [Your Account](https://www.edifabric.com/docs/getting-started/your-account.html)
+- [Support](https://www.edifabric.com/docs/index.html)
 - Support: support@edifabric.com
 
 ### 2026 © EdiFabric
