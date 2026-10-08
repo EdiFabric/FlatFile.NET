@@ -167,12 +167,11 @@ License failures throw `LicenseException`. `ErrorCode` is the number below, and 
 
 Custom flat files are plain C# classes. These examples already include them in `EdiFabric.Examples.FlatFile.Common`.
 
-The standard EDI models published on NuGet, such as **EdiFabric.Templates.X12** and **EdiFabric.Templates.Edifact**, are for evaluation only. They are a Community plan limitation.
-
-Paid plans provide every EDI template as plain C# files. Add them to the solution by following [How to create EDI template projects](https://www.edifabric.com/docs/edifabric-net/edi-templates.html). For evaluation and the Community plan, you can still download the templates in compiled form by following the same article.
+Standard EDI formats, such as X12, EDIFACT and HL7, use C# templates from the [EDI spec library](https://www.edifabric.com/specs/index.html). The templates are the same on every plan, Community included, and you can download them without an account. Open a transaction, select the **ediFabric .NET** tab, and select **Download C#**. To change a template for a trading partner, select **Customize in Spec Builder** and download the C# of your spec from the [EDI Spec Builder](https://www.edifabric.com/spec-builder/index.html). How to add the files to a class library is in [EDI templates](https://www.edifabric.com/docs/edifabric-net/edi-templates.html).
 
 - [EDI to CSV](https://www.edifabric.com/docs/edifabric-net/edi-to-csv.html)
-- [EdiNation spec library](https://edination.edifabric.com/edi-spec-library.html) (no registration)
+- [EDI spec library](https://www.edifabric.com/specs/index.html) (no registration)
+- [EDI Spec Builder](https://www.edifabric.com/spec-builder/index.html)
 
 ## Warranty
 
