@@ -1,4 +1,6 @@
-# EdiFabric C# .NET Examples for Flat and CSV Files
+# EdiFabric C# .NET Examples for Flat Files and CSV
+
+C# examples for EdiFabric, the .NET flat file and CSV parser: read, write and validate delimited, positional and mixed flat files, and convert them to JSON. Install EdiFabric from NuGet with `dotnet add package EdiFabric`; it targets .NET 6, 8, 9, 10 and .NET Framework 4.8, and runs without an account on the demo serial key.
 
 **EdiFabric 11.2.0** is a .NET SDK that parses, generates, validates, and splits EDI files. These examples cover custom **flat files**: delimited, positional, or a mixture of both, including CSV.
 
